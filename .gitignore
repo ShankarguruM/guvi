@@ -1,33 +1,15 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+#include <stdio.h>
+ 
+void main()
+{
+  int num;
+ 
+  printf("Enter a number: \n");
+  scanf("%d", &num);
+  if (num > 0)
+  printf("%d is a positive number \n", num);
+  else if (num < 0)
+  printf("%d is a negative number \n", num);
+  else
+  printf("0 is neither positive nor negative");
+}
